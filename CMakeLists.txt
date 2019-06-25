@@ -29,8 +29,17 @@ add_executable(myapp
     main.cpp
     formatting.cpp
 )
+
+target_link_libraries(myapp
+PRIVATE stdc++fs)
+
+add_dependencies(myapp
+spdlog)
     
 add_executable(tests
     main_test.cpp
     formatting.cpp
 )
+
+add_dependencies(tests
+spdlog)
