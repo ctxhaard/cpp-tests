@@ -39,6 +39,7 @@ spdlog)
 add_executable(tests
     main_test.cpp
     formatting.cpp
+    regex.cpp
 )
 
 add_dependencies(tests
